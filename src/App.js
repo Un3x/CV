@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
+import Category from './components/Category'
+import WhoAmI from './components/WhoAmI'
+import WhatIDo from './components/WhatIDo'
 import './App.css';
+import Experience from './components/Work/Experience'
+import Formation from './components/School/Formation'
+import config from './config/config'
 
-function App() {
-  return (
+const App = () => (
+  <div className="MainContainer">
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WhoAmI />
+      <WhatIDo />
+      <Category title="Expérience professionelle">
+        <Experience content={config.experience.matters} />
+        <Experience content={config.experience.ensiie} />
+        <Experience content={config.experience.marte} />
+      </Category>
+      <Category title="Formation">
+        <div className="FlexContainer">
+          <Formation content={config.education.ensiie} />
+          <Formation content={config.education.stanislas} />
+        </div>
+      </Category>
+      <Category title="Les hobbys">
+      </Category>
     </div>
-  );
-}
+  </div>
+);
+
 
 export default App;
