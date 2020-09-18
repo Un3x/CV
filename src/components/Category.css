@@ -4,9 +4,8 @@
 
 .categoryTitle {
   font-size:18px;
+  padding-bottom: 10px;
   font-weight: bold;
-  padding: 10px 0;
-  margin: 10px 0;
   color: hsl(21, 70%, 57%);
   border-bottom: 2px solid #425FA5;
 }

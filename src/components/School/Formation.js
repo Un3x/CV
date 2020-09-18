@@ -7,9 +7,11 @@ const Formation = (props) => (
       <a href={props.content.url}>
         <img className="img" src={props.content.logo} alt={props.content.alt} />
       </a>
+      <div className="FormationContent">
+        {props.content.description}
+      </div>
     </div>
-    {props.content.description}
-    <div className="duration">
+    <div className="FormationDuration">
       {props.content.duration}
     </div>
   </div>

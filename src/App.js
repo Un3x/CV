@@ -10,21 +10,30 @@ import config from './config/config'
 const App = () => (
   <div className="MainContainer">
     <div className="App">
-      <WhoAmI />
-      <WhatIDo />
-      <Category title="Expérience professionelle">
-        <Experience content={config.experience.matters} />
-        <Experience content={config.experience.ensiie} />
-        <Experience content={config.experience.marte} />
-      </Category>
-      <Category title="Formation">
-        <div className="FlexContainer">
-          <Formation content={config.education.ensiie} />
-          <Formation content={config.education.stanislas} />
+      <div className="Header">
+        <WhoAmI />
+        <WhatIDo />
+      </div>
+      <div className="Body">
+        <div className="Skills">
+          <Category title="Formation">
+            <div className="FlexContainer">
+              <Formation content={config.education.ensiie} />
+              <Formation content={config.education.stanislas} />
+            </div>
+          </Category>
         </div>
-      </Category>
-      <Category title="Les hobbys">
-      </Category>
+        <div className="Schoolperience">
+          <Category title="Expérience professionelle">
+            <Experience content={config.experience.matters} />
+            <Experience content={config.experience.ensiie} />
+            <Experience content={config.experience.marte} />
+          </Category>
+
+          <Category title="Les hobbys">
+          </Category>
+        </div>
+      </div>
     </div>
   </div>
 );
