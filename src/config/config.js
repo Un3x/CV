@@ -43,6 +43,30 @@ const config = {
       description: "Stanislas Paris - Prépa PCSI-PSI"
     }
   },
+  skills: [
+    {
+      title: 'Ops/ CI / CD',
+      rate: 2.5
+    }, {
+      title: 'tests',
+      rate: 3.25
+    }, {
+      title: 'Conception',
+      rate: 3.75
+    }, {
+      title: 'Backend',
+      rate: 4.25
+    }, {
+      title: 'frontend',
+      rate: 3
+    }, {
+      title: 'Ergonomie',
+      rate: 3
+    }, {
+      title: 'UX/UI',
+      rate: 2
+    },
+  ],
   hobby: {
     snowboard: {
       title: "snowboard",
